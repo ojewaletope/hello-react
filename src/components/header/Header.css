@@ -3,8 +3,6 @@
 .nav {
   /* background-color: aqua; */
   width: 100%;
-  /* display: flex; */
-  /* justify-content: space-between; */
 }
 .nav__list {
   list-style: none;
