@@ -1,8 +1,17 @@
 .banner {
-  height: 400px;
+  height: 200px;
   /* background-image: url('../../public/img/banner.jpg') */
 }
 .banner__details {
   text-align: center;
   text-transform: uppercase;
+  opacity: 0;
+  animation: slideFadeIn 2s 1s forwards;
+  margin: 50px 0 0 0;
+}
+@keyframes slideFadeIn {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }

@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 //components
-import Header from './components/header/Header'
-import Banner from './components/banner/Banner';
+import Header from "./components/header/Header";
+import Banner from "./components/banner/Banner";
+import Card from "./components/cards/Card";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Banner/>
+        <Header />
+        <Banner />
+        <Card />
       </div>
     );
   }
