@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Banner from "./components/banner/Banner";
 import Card from "./components/cards/Card";
+import Form from "./components/form/Form";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Header />
         <Banner />
         <Card />
+        <Form/>
       </div>
     );
   }
