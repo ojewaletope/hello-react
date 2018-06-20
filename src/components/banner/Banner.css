@@ -8,6 +8,7 @@
   opacity: 0;
   animation: slideFadeIn 2s 1s forwards;
   margin: 50px 0 0 0;
+  color: rgb(63, 59, 59);
 }
 @keyframes slideFadeIn {
   100% {
