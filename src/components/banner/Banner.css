@@ -1,0 +1,8 @@
+.banner {
+  height: 400px;
+  /* background-image: url('../../public/img/banner.jpg') */
+}
+.banner__details {
+  text-align: center;
+  text-transform: uppercase;
+}
