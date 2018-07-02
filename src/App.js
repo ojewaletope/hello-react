@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import cards from '../src/cards'
 
 //components
 import Header from "./components/header/Header";
@@ -14,7 +15,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Banner />
-        <Card />
+        <Card cards={cards} />
         <Form/>
         <Footer />
       </div>

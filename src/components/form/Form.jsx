@@ -10,21 +10,22 @@ class Form extends React.Component {
     },
     error: {}
   };
-  onChange = e =>
+  onChange(e) {
     this.setState({
       data: { ...this.state.data, [e.target.name]: e.target.value }
     });
-  handleSubmit = e => {
+  }
+  handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state.data)
+    console.log(this.state.data);
     this.setState({
-      data:{
+      data: {
         name: "",
-        email: '',
-        message: ''
+        email: "",
+        message: ""
       }
-    })
-  };
+    });
+  }
   render() {
     const { data } = this.state;
     return (
@@ -32,7 +33,7 @@ class Form extends React.Component {
         <div className="form__heading">
           <h3>contact me for your web jobs</h3>
         </div>
-        <form action="" className="contact__form">
+        <form action="" className="contact__form" onSubmit={this.handleSubmit}>
           <div>
             <input
               type="text"
@@ -63,7 +64,11 @@ class Form extends React.Component {
               onChange={this.onChange}
             />
           </div>
-          <button className="form__btn" onClick={this.handleSubmit}>Send Me A Request</button>
+          <input
+            type="submit"
+            value="Send Me A Request"
+            className="form__btn"
+          />
         </form>
       </div>
     );
